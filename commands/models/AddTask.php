@@ -1,6 +1,6 @@
 <?php
 
-namespace app\models;
+namespace app\models\commands;
 
 use app\models\Task;
 use Symfony\Component\CssSelector\Exception\InternalErrorException;

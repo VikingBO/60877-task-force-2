@@ -37,6 +37,15 @@ $identity = Yii::$app->user->identity;
         <?php endif; ?>
 
         <div class="map">
+            <script>
+                ymaps.ready(init);
+                function init(){
+                    var myMap = new ymaps.Map("map", {
+                        center: [<?= $task->latitude ?>, <?= $task->longitude ?>],
+                        zoom: 15
+                    });
+                }
+            </script>
             <div id="map" style="width: 600px; height: 400px"></div>
 
             <p class="map-address town">Москва</p>
